@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Projects (Set 2)</title>
+  <style>
+    body.light {
+      background-color: white;
+      color: black;
+    }
+    body.dark {
+      background-color: #121212;
+      color: white;
+    }
+    section {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    #carousel {
+      width: 300px;
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mini Projects (Set 2)</h1>
+  <button onclick="toggleTheme()">Toggle Light/Dark Mode</button>
+
+  <!-- Dynamic List Manager -->
+  <section id="listManager">
+    <h2>1. Dynamic List Manager</h2>
+    <input type="text" id="itemInput" placeholder="Enter item">
+    <button onclick="addItem()">Add</button>
+    <ul id="itemList"></ul>
+  </section>
+
+  <!-- Filter Table Rows -->
+  <section id="tableFilter">
+    <h2>2. Filter Table Rows</h2>
+    <input type="text" id="searchInput" placeholder="Search names...">
+    <table border="1" id="dataTable">
+      <tr><th>Name</th></tr>
+      <tr><td>John</td></tr>
+      <tr><td>Alice</td></tr>
+      <tr><td>Bob</td></tr>
+      <tr><td>Mary</td></tr>
+    </table>
+  </section>
+
+  <!-- Image Carousel -->
+  <section id="imageCarousel">
+    <h2>3. Image Carousel</h2>
+    <img id="carousel" src="https://via.placeholder.com/300?text=Image+1">
+    <br>
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+  </section>
+
+  <!-- Link external JS -->
+  <script src="index.js"></script>
+</body>
+</html>
+
